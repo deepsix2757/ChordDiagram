@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <style>
+        body{
+            font-family: 'Open Sans', sans-serif;
+            font-size:10px;
+            text-align: center;
+        }
+        @import url(style.css);
+
+        #circle circle {
+            fill: none;
+            pointer-events: all;
+        }
+
+        #top {
+            height: 100px;
+        }
+
+        .group path {
+            fill-opacity: .5;
+        }
+
+        path.chord {
+            stroke: #000;
+            stroke-width: .05px;
+        }
+
+        #circle:hover path.fade {
+            display: none;
+        }
+    </style>
+    <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+</head>
+<body>
+    <div id="top"></div>
+    <div id="chart">
+        <svg id="chartSvg"></svg>
+    </div>
+    <script type="text/javascript" src="./js/chord.js"></script>
+</body>
+
+</html>
